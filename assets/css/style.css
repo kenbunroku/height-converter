@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background-color: lightblue;
+  font-size: 20px;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  margin: auto;
+}
+
+.container {
+  place-self: center;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type=number] {
+    text-align: right;
+}
