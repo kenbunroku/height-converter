@@ -7,16 +7,16 @@ const convert_button = document.querySelector('.convert');
 // create a function to convert feet & inches into meters
 function converter() {
   // get feet from the input
-  let feet_value = feet_field.value;
+  const feet_value = parseInt(feet_field.value, 10);
 
   // get inches from the input
-  let inches_value = inches_field.value;
+  const inches_value = parseInt(inches_field.value, 10);
 
   let meters = feet_value * 0.3048 + inches_value * 0.0254;
   meters = meters.toFixed(2);
 
   // overwrite meters
-  meters_field.value = meters
+  meters_field.value = meters;
 }
 
 //  add event when the button is clicked
